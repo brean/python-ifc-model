@@ -13,6 +13,7 @@ class Point(Relations):
         return data
 
     def from_ifc(self, ifc_data):
+        assert ifc_data.is_a('IfcCartesianPoint')
         super(Point, self).from_ifc(ifc_data)
         self.type = ifc_data.is_a()[3:]
         self.coords = ifc_data.Coordinates
