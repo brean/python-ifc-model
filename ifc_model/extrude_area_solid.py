@@ -2,6 +2,8 @@ from .representation_item import RepresentationItem
 from .arbitrary_closed_profile_def import ArbitraryClosedProfileDef
 from .arbitrary_profile_def_with_voids import ArbitraryProfileDefWithVoids
 from .rectangle_profile_def import RectangleProfileDef
+from .i_shape_profile_def import IShapeProfileDef
+from .circle_profile_def import CircleProfileDef
 
 class ExtrudedAreaSolid(RepresentationItem):
     def __init__(self, repr):
@@ -12,7 +14,9 @@ class ExtrudedAreaSolid(RepresentationItem):
         classes = {
             'ArbitraryClosedProfileDef': ArbitraryClosedProfileDef,
             'ArbitraryProfileDefWithVoids': ArbitraryProfileDefWithVoids,
-            'RectangleProfileDef': RectangleProfileDef
+            'RectangleProfileDef': RectangleProfileDef,
+            'IShapeProfileDef': IShapeProfileDef,
+            'CircleProfileDef': CircleProfileDef
         }
         return classes[name](self)
 

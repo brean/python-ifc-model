@@ -9,14 +9,13 @@ class Product(Relations):
         ifc_type = self.ifc_data.is_a()
         assert ifc_type.startswith('Ifc')
         self.ifc_type = ifc_type[3:].lower()
+        
         self.representations = []
-        # TODO representation for product
-        # self.representations = []
-        # if self.ifc_data.Representation:
-        #    self.representations = self.cls_from_ifc(
-        #        Representation,
-        #        self.ifc_data.Representation.Representations
-        #    )
+        if self.ifc_data.Representation:
+            self.representations = self.cls_from_ifc(
+                Representation,
+                self.ifc_data.Representation.Representations
+            )
 
 
     def from_json(self, data):
