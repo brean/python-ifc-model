@@ -1,6 +1,9 @@
 from .relations import Relations
 from .point import Point
 
+'''
+segment either an IfcPolyline or an IfcTrimmedCurve
+'''
 class Segment(Relations):
     def from_json(self, data):
         super(Segment, self).from_json(data)

@@ -1,7 +1,7 @@
 import logging
 from .relations import Relations
 from .building import Building
-from .representation import Representation
+#from .representation import Representation
 
 class Site(Relations):
     def from_ifc(self, ifc_data):
@@ -30,26 +30,26 @@ class Site(Relations):
             self.get_related_objects(ifc_data)
         )
 
-        self.representations = []
-        if self.ifc_data.Representation:
-            self.representations = self.cls_from_ifc(
-                Representation,
-                self.ifc_data.Representation.Representations
-            )
+        #self.representations = []
+        #if self.ifc_data.Representation:
+        #    self.representations = self.cls_from_ifc(
+        #        Representation,
+        #        self.ifc_data.Representation.Representations
+        #    )
 
     def from_json(self, data):
         super(Site, self).from_json(data)
         self.global_id = data['global_id']
         self.name = data['name']
         self.buildings = self.cls_from_json(Building, data['buildings'])
-        self.representations = self.cls_from_json(Representation, data['representations'])
+        #self.representations = self.cls_from_json(Representation, data['representations'])
 
     def to_json(self):
         data = super(Site, self).to_json()
         data['global_id'] = self.global_id
         data['name'] = self.name
         data['buildings'] = [b.to_json() for b in self.buildings]
-        data['representations'] = [r.to_json() for r in self.representations]
+        #data['representations'] = [r.to_json() for r in self.representations]
         return data
 
     def __init__(self, project):

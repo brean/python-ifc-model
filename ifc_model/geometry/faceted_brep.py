@@ -1,5 +1,8 @@
 from .representation_item import RepresentationItem
 
+'''
+see also extrude_area_solid
+'''
 class FacetedBrep(RepresentationItem):
     def __init__(self, repr):
         self.repr = repr

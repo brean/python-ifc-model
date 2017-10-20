@@ -5,6 +5,9 @@ from .rectangle_profile_def import RectangleProfileDef
 from .i_shape_profile_def import IShapeProfileDef
 from .circle_profile_def import CircleProfileDef
 
+'''
+see also faceted_brep
+'''
 class ExtrudedAreaSolid(RepresentationItem):
     def __init__(self, repr):
         self.repr = repr
@@ -25,9 +28,12 @@ class ExtrudedAreaSolid(RepresentationItem):
         super(ExtrudedAreaSolid, self).from_ifc(ifc_data)
         # TODO: ifc_data.Position is a Axis2Placement3D, maybe get an own class?
         self.location = ifc_data.Position.Location.Coordinates
-        self.direction = [0, 0, 0]
+        self.direction = None
         if ifc_data.Position.RefDirection:
             self.direction = ifc_data.Position.RefDirection.DirectionRatios
+        self.axis = None
+        if self.ifc_data.Position.Axis:
+            self.axis = self.ifc_data.Position.Axis.DirectionRatios
         area_type = self.ifc_data.SweptArea.is_a()
         self.depth = self.ifc_data.Depth
         self.area = self.area_from_class(area_type[3:])
@@ -37,6 +43,7 @@ class ExtrudedAreaSolid(RepresentationItem):
         super(ExtrudedAreaSolid, self).from_json(data)
         self.area = self.area_from_class(data['area']['type'])
         self.depth = data['depth']
+        self.axis = data['axis']
         self.location = data['location']
         self.direction = data['direction']
         self.area.from_json(data['area'])
@@ -46,6 +53,7 @@ class ExtrudedAreaSolid(RepresentationItem):
         data['type'] = self.type
         data['depth'] = self.depth
         data['location'] = self.location
+        data['axis'] = self.axis
         data['direction'] = self.direction
         data['area'] = self.area.to_json()
         return data

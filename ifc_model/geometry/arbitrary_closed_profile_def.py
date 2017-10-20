@@ -32,7 +32,7 @@ class ArbitraryClosedProfileDef(Relations):
         assert ifc_data.is_a('IfcArbitraryClosedProfileDef')
         # print(json.dumps(debug(ifc_data), indent=2))
         self.outer_curve_type = ifc_data.OuterCurve.is_a()[3:]
-        if ifc_data.OuterCurve.is_a('IfcCompositeCurve'):
+        if self.outer_curve_type == 'CompositeCurve':
             self.segments = self.cls_from_ifc(Segment, ifc_data.OuterCurve.Segments)
         else:
             # just connects the points

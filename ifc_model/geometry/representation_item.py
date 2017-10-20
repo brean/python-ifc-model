@@ -1,5 +1,8 @@
 from .relations import Relations
 
+'''
+see faceted_brep and extrude_area_solid
+'''
 class RepresentationItem(Relations):
     def to_json(self):
         data = super(RepresentationItem, self).to_json()
