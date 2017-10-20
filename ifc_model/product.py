@@ -10,25 +10,25 @@ class Product(Relations):
         assert ifc_type.startswith('Ifc')
         self.ifc_type = ifc_type[3:].lower()
 
-        #self.representations = []
-        #if self.ifc_data.Representation:
-        #    self.representations = self.cls_from_ifc(
-        #        Representation,
-        #        self.ifc_data.Representation.Representations
-        #    )
+        self.representations = []
+        if self.ifc_data.Representation:
+            self.representations = self.cls_from_ifc(
+                Representation,
+                self.ifc_data.Representation.Representations
+            )
 
 
     def from_json(self, data):
         super(Product, self).from_json(data)
         self.name = data['name']
         self.ifc_type = data['type']
-        #self.representations = self.cls_from_json(Representation, data['representations'])
+        self.representations = self.cls_from_json(Representation, data['representations'])
 
     def to_json(self):
         data = super(Product, self).to_json()
         data['name'] = self.name
         data['type'] = self.ifc_type
-        #data['representations'] = [r.to_json() for r in self.representations]
+        data['representations'] = [r.to_json() for r in self.representations]
         return data
 
     def __init__(self, parent):

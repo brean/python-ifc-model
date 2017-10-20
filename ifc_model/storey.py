@@ -1,7 +1,7 @@
 from .relations import Relations
 from .product import Product
 from .space import Space
-#from .representation import Representation
+from .representation import Representation
 
 '''
 spaces/rooms and products,
@@ -22,12 +22,12 @@ class Storey(Relations):
             self.get_related_elements(ifc_data)
         )
         self.elevation = ifc_data.Elevation
-        #self.representations = []
-        #if self.ifc_data.Representation:
-        #    self.representations = self.cls_from_ifc(
-        #        Representation,
-        #        self.ifc_data.Representation.Representations
-        #    )
+        self.representations = []
+        if self.ifc_data.Representation:
+            self.representations = self.cls_from_ifc(
+                Representation,
+                self.ifc_data.Representation.Representations
+            )
 
     def from_json(self, data):
         super(Storey, self).from_json(data)
@@ -36,7 +36,7 @@ class Storey(Relations):
         self.elevation = data['elevation']
         self.spaces = self.cls_from_json(Space, data['spaces'])
         self.products = self.cls_from_json(Product, data['products'])
-        #self.representations = self.cls_from_json(Representation, data['representations'])
+        self.representations = self.cls_from_json(Representation, data['representations'])
 
     def to_json(self):
         data = super(Storey, self).to_json()
@@ -45,7 +45,7 @@ class Storey(Relations):
         data['elevation'] = self.elevation
         data['spaces'] = [s.to_json() for s in self.spaces]
         data['products'] = [p.to_json() for p in self.products]
-        #data['representations'] = [r.to_json() for r in self.representations]
+        data['representations'] = [r.to_json() for r in self.representations]
         return data
 
     def __init__(self, building):

@@ -3,4 +3,4 @@
 # Ifc-Model based on the ifc openshell
 
 
-__all__ = ['building', 'product', 'project', 'relations', 'site', 'space', 'storey']
+__all__ = ['building', 'product', 'project', 'relations', 'representation', 'site', 'space', 'storey']
