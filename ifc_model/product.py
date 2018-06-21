@@ -1,5 +1,5 @@
 from .relations import Relations
-#from .representation import Representation
+from .representation import Representation
 
 class Product(Relations):
     def from_ifc(self, ifc_data):
