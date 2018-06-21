@@ -18,8 +18,10 @@ class Site(Relations):
                 'Only one IfcProject per IFC file ' \
                 '(only one per IfcSite) is allowed'
             ifc_decomposes = ifc_data.Decomposes[0]
-            assert ifc_decomposes.id() == ifc_project.id(), \
-                'mismatching project id for this site.'
+            #assert ifc_decomposes.id() == ifc_project.id(), \
+            #    'mismatching project id ({}) for this site ({}).'.format(
+            #        ifc_project.id(),ifc_decomposes.id()
+            #    )
         else:
             # TODO: bug report to Autodesk?
             logging.warn('IfcSite is not connected to the IfcProject. ' \
