@@ -7,10 +7,10 @@ KNOWN_ITEMS = {
 }
 
 class IfcElement(dict):
-    def __init__(parent):
+    def __init__(self, parent):
         self.parent = parent
     
-    def from_ifc(ifc_data):
+    def from_ifc(self, ifc_data):
         self.ifc_data = ifc_data
         ifc_type = ifc_data.is_a()
         if ifc_type in KNOWN_ITEMS:
@@ -42,7 +42,7 @@ ifc_map = {
 }
 
 class Parser(object):
-    def from_ifc(ifc_data, parent):
+    def from_ifc(self, ifc_data, parent):
         self.ifc_data = ifc_data
         ifc_type = ifc_data.is_a()
         for cls,ifc_types in ifc_map.items():
