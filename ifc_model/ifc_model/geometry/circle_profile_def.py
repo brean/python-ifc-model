@@ -1,8 +1,9 @@
-from .relations import Relations
+from ifc_model.relations import Relations
+
 
 class CircleProfileDef(Relations):
-    def __init__(self, repr):
-        self.repr = repr
+    def __init__(self, representation):
+        self.representation = representation
         self.type = 'CircleProfileDef'
 
     def to_json(self):

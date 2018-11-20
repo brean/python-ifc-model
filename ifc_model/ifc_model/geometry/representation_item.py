@@ -1,9 +1,15 @@
-from .relations import Relations
+from ifc_model.relations import Relations
 
 '''
 see faceted_brep and extrude_area_solid
 '''
+
+
 class RepresentationItem(Relations):
+    def __init__(self):
+        self.type = None
+        self.location = (0, 0, 0)
+
     def to_json(self):
         data = super(RepresentationItem, self).to_json()
         data['type'] = self.type

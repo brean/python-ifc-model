@@ -1,10 +1,18 @@
-from .relations import Relations
+from ifc_model.relations import Relations
 from .point import Point
-
-'''
+"""
 segment either an IfcPolyline or an IfcTrimmedCurve
-'''
+"""
+
+
 class Segment(Relations):
+    def __init__(self, parent):
+        self.parent = parent
+        self.type = ''
+        self.points = []
+        self.center = None
+        self.radius = 0.0
+
     def from_json(self, data):
         super(Segment, self).from_json(data)
         self.type = data['type']
@@ -14,7 +22,6 @@ class Segment(Relations):
             self.center = Point(self)
             self.center.from_json(data['center'])
             self.radius = data['radius']
-
 
     def to_json(self):
         data = super(Segment, self).to_json()
@@ -40,6 +47,3 @@ class Segment(Relations):
             self.radius = ifc_curve.BasisCurve.Radius
         else:
             raise Exception(ifc_curve.is_a(), ifc_curve.id())
-
-    def __init__(self, parent):
-        self.parent = parent

@@ -1,9 +1,15 @@
 import logging
-from .relations import Relations
+from ifc_model.relations import Relations
 from .extrude_area_solid import ExtrudedAreaSolid
 from .faceted_brep import FacetedBrep
 
+
 class Representation(Relations):
+    def __init__(self, parent):
+        self.shapes = []
+        self.boxes = []
+        self.parent = parent
+
     def from_json(self, json_data):
         super(Representation, self).from_json(json_data)
         self.shapes = []
@@ -59,6 +65,3 @@ class Representation(Relations):
         data['boxes'] = [b.to_json() for b in self.boxes]
         data['shapes'] = [s.to_json() for s in self.shapes]
         return data
-
-    def __init__(self, parent):
-        self.parent = parent

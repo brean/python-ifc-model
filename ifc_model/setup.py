@@ -7,7 +7,7 @@ setup(
     author_email='self@andreasbresser.de',
     url='https://github.com/brean/ifc_model',
     long_description='',
-    version='dev',
+    version='0.1',
     packages=find_packages(),
     include_package_data=True,
     install_requires=[])

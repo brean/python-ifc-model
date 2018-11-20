@@ -1,13 +1,15 @@
-from .relations import Relations
+import ifc_model.relations
 from .point import Point
 from .segment import Segment
 
-class ArbitraryClosedProfileDef(Relations):
-    def __init__(self, repr):
-        self.repr = repr
+
+class ArbitraryClosedProfileDef(ifc_model.relations.Relations):
+    def __init__(self, representation):
+        self.representation = representation
         self.type = 'ArbitraryClosedProfileDef'
         self.points = None
         self.segments = None
+        self.outer_curve_type = None
 
     def to_json(self):
         data = super(ArbitraryClosedProfileDef, self).to_json()
@@ -33,7 +35,8 @@ class ArbitraryClosedProfileDef(Relations):
         # print(json.dumps(debug(ifc_data), indent=2))
         self.outer_curve_type = ifc_data.OuterCurve.is_a()[3:]
         if self.outer_curve_type == 'CompositeCurve':
-            self.segments = self.cls_from_ifc(Segment, ifc_data.OuterCurve.Segments)
+            self.segments = self.cls_from_ifc(
+                Segment, ifc_data.OuterCurve.Segments)
         else:
             # just connects the points
             self.points = self.cls_from_ifc(Point, ifc_data.OuterCurve.Points)

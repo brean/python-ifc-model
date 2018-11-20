@@ -1,4 +1,5 @@
-from .relations import Relations
+from ifc_model.relations import Relations
+
 
 class RectangleProfileDef(Relations):
     def __init__(self, repr):

@@ -1,18 +1,26 @@
-'''
+"""
 helper functions to resolve ifc relations
-'''
+"""
+import logging
+
+
 class Relations(object):
-    '''
+    def __init__(self):
+        self.id = 0
+        self.ifc_data = None
+
+    """
     get relating objects from IfcRelDecomposes -> IfcRelAggregates
     see /ifckernel/lexical/ifcreldecomposes.htm
-    '''
-    def get_related_objects(self, obj, is_a='IfcRelAggregates'):
+    """
+    @staticmethod
+    def get_related_objects(obj, is_a='IfcRelAggregates'):
         related_objects = []
         # IsDecomposedBy is a set of IfcRelDecomposes
         # (IfcRelAggregates or IfcRelNests)
         for decomp in obj.IsDecomposedBy:
             if not decomp.is_a(is_a):
-                logging.warn('No {} according to standard!'.format(is_a))
+                logging.warning('No {} according to standard!'.format(is_a))
             # IfcRelNets and IfcRelAggregates require to have at least 1
             # element is set!
             # see /ifckernel/lexical/ifcrelnests.htm
@@ -22,11 +30,12 @@ class Relations(object):
             related_objects += decomp.RelatedObjects
         return related_objects
 
-    '''
+    """
     get containing objects from IfcRelContainedInSpatialStructure -> IfcProduct
     see /ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm
-    '''
-    def get_related_elements(self, obj, is_a='IfcRelContainedInSpatialStructure'):
+    """
+    @staticmethod
+    def get_related_elements(obj, is_a='IfcRelContainedInSpatialStructure'):
         elements = []
         # ContainsElements is an IfcRelContainedInSpatialStructure
         # (IfcSpace and IfcStorey)
@@ -34,7 +43,8 @@ class Relations(object):
             if is_a:
                 assert elem.is_a(is_a)
             # RelatedElements required to have at least 1 element set!
-            # see /ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm
+            # see
+            # /ifcproductextension/lexical/ifcrelcontainedinspatialstructure.htm
             assert len(elem.RelatedElements) >= 1
             # list of IfcProduct
             elements += elem.RelatedElements

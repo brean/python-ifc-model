@@ -5,13 +5,20 @@ from .rectangle_profile_def import RectangleProfileDef
 from .i_shape_profile_def import IShapeProfileDef
 from .circle_profile_def import CircleProfileDef
 
-'''
+"""
 see also faceted_brep
-'''
+"""
+
+
 class ExtrudedAreaSolid(RepresentationItem):
-    def __init__(self, repr):
-        self.repr = repr
+    def __init__(self, representation):
+        self.representation = representation
         self.type = 'ExtrudedAreaSolid'
+        self.location = None
+        self.direction = None
+        self.axis = None
+        self.depth = None
+        self.area = None
 
     def area_from_class(self, name):
         classes = {

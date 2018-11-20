@@ -1,4 +1,5 @@
-test/buildings/*.ifc
+buildings/*.ifc
+out/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -3,7 +3,15 @@ import json
 from .relations import Relations
 from .site import Site
 
+
 class Project(Relations):
+    def __init__(self):
+        self.global_id = 0
+        self.long_name = ''
+        self.name = ''
+        self.sites = []
+        self.filename = self.ifc_file = self.ifc_data = None
+
     def from_ifc(self, ifc_data):
         assert ifc_data.is_a('IfcProject')
         super(Project, self).from_ifc(ifc_data)
@@ -36,7 +44,8 @@ class Project(Relations):
         self.ifc_file = ifcopenshell.open(filename)
         ifc_projects = self.ifc_file.by_type('ifcproject')
         # only one project is allows per ifc file!
-        assert len(ifc_projects) == 1, 'Only one IfcProject per Ifc-file is allowed'
+        assert len(ifc_projects) == 1, \
+            'Only one IfcProject per Ifc-file is allowed'
         ifc_project = ifc_projects[0]
         self.ifc_data = ifc_project
         self.from_ifc(ifc_project)

@@ -1,6 +1,12 @@
-from .relations import Relations
+from ifc_model.relations import Relations
+
 
 class Point(Relations):
+    def __init__(self, parent):
+        self.parent = parent
+        self.coords = (0, 0, 0)
+        self.type = None
+
     def from_json(self, data):
         super(Point, self).from_json(data)
         self.coords = data['coords']
@@ -17,6 +23,3 @@ class Point(Relations):
         super(Point, self).from_ifc(ifc_data)
         self.type = ifc_data.is_a()[3:]
         self.coords = ifc_data.Coordinates
-
-    def __init__(self, parent):
-        self.parent = parent

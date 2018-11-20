@@ -2,24 +2,35 @@ from .relations import Relations
 from .product import Product
 from .space import Space
 from .representation import Representation
-
-'''
+"""
 spaces/rooms and products,
 see /ifcproductextension/lexical/ifcbuildingstorey.htm
-'''
+"""
+
+
 class Storey(Relations):
+    def __init__(self, building):
+        super().__init__()
+        self.building = building
+        self.spaces = []
+        self.name = ''
+        self.long_name = ''
+        self.products = []
+        self.elevation = 2.8
+        self.representations = []
+
     def from_ifc(self, ifc_data):
         assert ifc_data.is_a('IfcBuildingStorey')
         super(Storey, self).from_ifc(ifc_data)
         self.spaces = self.cls_from_ifc(
             Space,
-            self.get_related_objects(ifc_data)
+            Relations.get_related_objects(ifc_data)
         )
         self.name = ifc_data.Name
         self.long_name = ifc_data.LongName
         self.products = self.cls_from_ifc(
             Product,
-            self.get_related_elements(ifc_data)
+            Relations.get_related_elements(ifc_data)
         )
         self.elevation = ifc_data.Elevation
         self.representations = []
@@ -47,6 +58,3 @@ class Storey(Relations):
         data['products'] = [p.to_json() for p in self.products]
         data['representations'] = [r.to_json() for r in self.representations]
         return data
-
-    def __init__(self, building):
-        self.building = building

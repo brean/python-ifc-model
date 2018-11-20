@@ -1,10 +1,13 @@
-import logging
+"""
+basic representation to get mesh-id, we do not parse the representation itself.
+(for now, see geometry/)
+"""
 from .relations import Relations
-# basic representation to get mesh-id, we do not parse the representation itself.
-# (for now, see geometry/)
+
 
 class Representation(Relations):
     def __init__(self, parent):
+        super().__init__()
         self.parent = parent
 
     def from_json(self, json_data):

@@ -1,14 +1,20 @@
 from .relations import Relations
 from .storey import Storey
 
+
 class Building(Relations):
+    def __init__(self, site):
+        self.site = site
+        self.name = ''
+        self.storeys = []
+
     def from_ifc(self, ifc_data):
         assert ifc_data.is_a('IfcBuilding')
         super(Building, self).from_ifc(ifc_data)
         self.name = ifc_data.Name
         self.storeys = self.cls_from_ifc(
             Storey,
-            self.get_related_objects(ifc_data)
+            Relations.get_related_objects(ifc_data)
         )
 
     def from_json(self, data):
@@ -21,6 +27,3 @@ class Building(Relations):
         data['name'] = self.name
         data['storeys'] = [s.to_json() for s in self.storeys]
         return data
-
-    def __init__(self, site):
-        self.site = site
