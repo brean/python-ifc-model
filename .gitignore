@@ -8,7 +8,6 @@ __pycache__/
 
 # TODO: create real test data
 test/
-ifcopenshell/
 
 # C extensions
 *.so

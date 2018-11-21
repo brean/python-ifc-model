@@ -5,5 +5,4 @@ Ifc-Model based on the IfcOpenShell
 """
 
 
-__all__ = ['building', 'product', 'project', 'relations', 'representation',
-           'site', 'space', 'storey']
+__all__ = ['data', 'relations', 'model', 'json', 'ifcopenshell']

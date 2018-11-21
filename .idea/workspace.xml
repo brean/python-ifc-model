@@ -2,7 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f45359f-49f3-4867-b2fc-ee8ee7422867" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_create_building.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example_create_building.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_create_building.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/data/template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/exporter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/importer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/json/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/json/exporter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/model/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/model/building.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/model/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/model/project.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/model/site.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/model/space.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifc_model/ifc_model/model/storey.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ifcopenshell/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example_dump_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example_dump_json.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ifc_model/ifc_model/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/building.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_closed_profile_def.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_profile_def_with_voids.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/circle_profile_def.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/extrude_area_solid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/face.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/faceted_brep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/i_shape_profile_def.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/point.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/rectangle_profile_def.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation_item.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/geometry/segment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/relations.py" beforeDir="false" afterPath="$PROJECT_DIR$/ifc_model/ifc_model/relations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/representation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/site.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/space.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ifc_model/ifc_model/storey.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,142 +64,268 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="1" />
-          <entry key="json" value="1" />
-          <entry key="md" value="1" />
-          <entry key="py" value="29" />
+          <entry key="gitignore" value="2" />
+          <entry key="ifc" value="7" />
+          <entry key="json" value="3" />
+          <entry key="md" value="5" />
+          <entry key="py" value="139" />
+          <entry key="sh" value="3" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="1" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="29" />
+          <entry key="Bash" value="3" />
+          <entry key="JSON" value="3" />
+          <entry key="Markdown" value="5" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Python" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="LICENSE" value="5" />
-          <entry key="md" value="18" />
-          <entry key="py" value="828" />
+          <entry key="dummy" value="42" />
+          <entry key="gitignore" value="3" />
+          <entry key="ifc" value="1" />
+          <entry key="md" value="691" />
+          <entry key="py" value="11787" />
+          <entry key="sh" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="18" />
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="828" />
+          <entry key="Bash" value="28" />
+          <entry key="Markdown" value="691" />
+          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="Python" value="11787" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/i_shape_profile_def.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/point.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/rectangle_profile_def.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-329">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation_item.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/segment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ifc_model/setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TODO.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.43569922">
+      <split-first>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/relations.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+                  <folding>
+                    <marker date="1542822575783" expanded="true" signature="66:67" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/importer.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="615">
+                  <caret line="41" selection-start-line="41" selection-end-line="41" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                    <marker date="1542824629197" expanded="true" signature="210:354" ph="..." />
+                    <marker date="1542824629197" expanded="true" signature="388:700" ph="..." />
+                    <marker date="1542824629197" expanded="true" signature="738:1236" ph="..." />
+                    <marker date="1542824629197" expanded="true" signature="1274:1877" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/example_dump_json.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#47#56#0" expanded="true" />
+                    <marker date="1542824960829" expanded="true" signature="158:159" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/exporter.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="460">
+                  <caret line="216" column="13" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                    <marker date="1542821258966" expanded="true" signature="366:1604" ph="..." />
+                    <marker date="1542821258966" expanded="true" signature="2114:2557" ph="..." />
+                    <marker date="1542821258966" expanded="true" signature="2556:2557" ph="..." />
+                    <marker date="1542821258966" expanded="true" signature="3445:3457" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifcopenshell/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="1" selection-start-column="1" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/site.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/json/exporter.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+                  <folding>
+                    <marker date="1542824981969" expanded="true" signature="49:54" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/__init__.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/space.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                  <folding>
+                    <marker date="1542824534622" expanded="true" signature="20:21" ph="..." />
+                    <marker date="1542824534622" expanded="true" signature="20:329" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/building.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/product.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="19" />
+                  <folding>
+                    <marker date="1542824510962" expanded="true" signature="22:23" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/project.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                  <folding>
+                    <marker date="1542823634803" expanded="true" signature="291:296" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/storey.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+                  <folding>
+                    <marker date="1542824177360" expanded="true" signature="21:26" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>get_related_objects</find>
-      <find>get_related_elements</find>
-      <find>repr</find>
-      <find>representations</find>
+      <find>'%(</find>
+      <find>create_ifcpolyline</find>
+      <find>create_guid</find>
+      <find>timestamp</find>
+      <find>Building</find>
+      <find>createBuilding</find>
+      <find>createIfcBuilding</find>
+      <find>IfcLabel;</find>
+      <find>create_ifclocalplacement</find>
+      <find>create_ifcpostaladdress</find>
+      <find>create_ifc_postal_address</find>
+      <find>project</find>
+      <find>Placement</find>
+      <find>export_building</find>
+      <find>IFCPOSTALADDRESS</find>
+      <find>site_placement</find>
+      <find>building</find>
+      <find>address</find>
+      <find>storey</find>
+      <find>container_storey</find>
+      <find>createIfc</find>
+      <find>create_ifc_local_placement</find>
+      <find>wall</find>
+      <find>ifc_from_template</find>
+      <find>site</find>
+      <find>building.elevation</find>
+      <find>export_storey</find>
+      <find>print</find>
+      <find>ifcwall</find>
+      <find>ifcopen</find>
     </findStrings>
+    <replaceStrings>
+      <replace>create_ifc_axis2placement</replace>
+      <replace>create_ifc_local_placement</replace>
+      <replace>create_ifc_postal_address</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/ifcopenshell</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -164,17 +333,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/project.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/product.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/relations.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/building.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/representation.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/site.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/space.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/storey.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_closed_profile_def.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_profile_def_with_voids.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/circle_profile_def.py" />
         <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/extrude_area_solid.py" />
         <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/face.py" />
         <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/faceted_brep.py" />
@@ -184,10 +342,48 @@
         <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation.py" />
         <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation_item.py" />
         <option value="$PROJECT_DIR$/ifc_model/ifc_model/geometry/segment.py" />
-        <option value="$PROJECT_DIR$/ifc_model/ifc_model/__init__.py" />
         <option value="$PROJECT_DIR$/ifc_model/setup.py" />
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/TODO.md" />
+        <option value="$PROJECT_DIR$/example.py" />
+        <option value="$PROJECT_DIR$/example_create_building.sh" />
+        <option value="$PROJECT_DIR$/example_dump_json.sh" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/parser/ifcopenshell/__init__.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/parser/ifcopenshell/exporter.py" />
+        <option value="$PROJECT_DIR$/ifc_model/template.ifc" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/data/template.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/parser/json/__init__.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/parser/json/exporter.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/meta.py" />
+        <option value="$PROJECT_DIR$/example_create_building.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/wall.py" />
+        <option value="$PROJECT_DIR$/ifc_create_building.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/__init__.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/exporter.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/building.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/product.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/project.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/representation.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/site.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/space.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/storey.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/__init__.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/data/__init__.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/json/__init__.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ifcopenshell/.gitignore" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/__init__.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/relations.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/project.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/site.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/storey.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/building.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/product.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/model/space.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/importer.py" />
+        <option value="$PROJECT_DIR$/example_dump_json.py" />
+        <option value="$PROJECT_DIR$/ifc_model/ifc_model/json/exporter.py" />
       </list>
     </option>
   </component>
@@ -213,6 +409,11 @@
             <path>
               <item name="python-ifc-model" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-ifc-model" type="462c0819:PsiDirectoryNode" />
+              <item name="buildings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-ifc-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-ifc-model" type="462c0819:PsiDirectoryNode" />
               <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,7 +427,28 @@
               <item name="python-ifc-model" type="462c0819:PsiDirectoryNode" />
               <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
               <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
-              <item name="geometry" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-ifc-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-ifc-model" type="462c0819:PsiDirectoryNode" />
+              <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
+              <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
+              <item name="ifcopenshell" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-ifc-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-ifc-model" type="462c0819:PsiDirectoryNode" />
+              <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
+              <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
+              <item name="json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-ifc-model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-ifc-model" type="462c0819:PsiDirectoryNode" />
+              <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
+              <item name="ifc_model" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python-ifc-model" type="b2602c69:ProjectViewProjectNode" />
@@ -238,6 +460,13 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ifc_model/ifc_model" />
+      <recent name="$PROJECT_DIR$/ifc_model/ifc_model/data" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -264,6 +493,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1173" extended-state="6" />
     <editor active="true" />
@@ -276,12 +514,12 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.33816424" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.21835749" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.3294686" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -291,117 +529,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/out/AC20-FZK-Haus.json">
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/segment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/building.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/representation.py">
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/rectangle_profile_def.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/site.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/space.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/storey.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/product.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/project.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1542722272235" expanded="true" signature="129:298" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/relations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="65" column="35" lean-forward="true" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-          <folding>
-            <marker date="1542724326880" expanded="true" signature="115:170" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-ifc-model-1ABMpbzs/lib/python3.6/site-packages/ifc_model/relations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_closed_profile_def.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_profile_def_with_voids.py">
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/i_shape_profile_def.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/circle_profile_def.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -415,93 +560,400 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/face.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/faceted_brep.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/i_shape_profile_def.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/point.py">
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/meta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/rectangle_profile_def.py">
+    <entry file="file://$PROJECT_DIR$/ifcopenshell/ifcopenshell_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="-1903">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation.py">
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-ifc-model-1ABMpbzs/lib/python3.6/site-packages/ifc_model/model/site.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-329">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/representation_item.py">
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-ifc-model-1ABMpbzs/lib/python3.6/site-packages/ifc_model/ifcopenshell/exporter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        <state relative-caret-position="45">
+          <caret line="161" column="4" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/segment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/__init__.py">
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_profile_def_with_voids.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ifc_model/setup.py">
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-ifc-model-1ABMpbzs/lib/python3.6/site-packages/ifc_model/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/circle_profile_def.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/geometry/arbitrary_closed_profile_def.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example_create_building.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TODO.md">
+    <entry file="file://$PROJECT_DIR$/ifcopenshell/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifcopenshell/file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/wall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example_create_building.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#1#30#0" expanded="true" />
+            <marker date="1542812052112" expanded="true" signature="117:697" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-ifc-model-1ABMpbzs/lib/python3.6/site-packages/ifc_model/model/project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.ifc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/building.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/representation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/space.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/storey.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-620">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/site.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifcopenshell/guid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_create_building.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/data/template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/data/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifcopenshell/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-ifc-model-1ABMpbzs/lib/python3.6/site-packages/ifc_model/model/building.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/relations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <marker date="1542822575783" expanded="true" signature="66:67" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/share/virtualenvs/python-ifc-model-1ABMpbzs/lib/python3.6/site-packages/ifc_model/relations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1542823634803" expanded="true" signature="291:296" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/storey.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <marker date="1542824177360" expanded="true" signature="21:26" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <marker date="1542824510962" expanded="true" signature="22:23" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/building.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/space.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <marker date="1542824534622" expanded="true" signature="20:21" ph="..." />
+            <marker date="1542824534622" expanded="true" signature="20:329" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/AC20-FZK-Haus.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6975">
+          <caret line="465" column="40" selection-start-line="465" selection-start-column="40" selection-end-line="465" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/importer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1542824629197" expanded="true" signature="210:354" ph="..." />
+            <marker date="1542824629197" expanded="true" signature="388:700" ph="..." />
+            <marker date="1542824629197" expanded="true" signature="738:1236" ph="..." />
+            <marker date="1542824629197" expanded="true" signature="1274:1877" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/model/site.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/ifcopenshell/exporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="216" column="13" selection-start-line="216" selection-start-column="13" selection-end-line="216" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1542821258966" expanded="true" signature="366:1604" ph="..." />
+            <marker date="1542821258966" expanded="true" signature="2114:2557" ph="..." />
+            <marker date="1542821258966" expanded="true" signature="2556:2557" ph="..." />
+            <marker date="1542821258966" expanded="true" signature="3445:3457" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example_dump_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#47#56#0" expanded="true" />
+            <marker date="1542824960829" expanded="true" signature="158:159" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ifc_model/ifc_model/json/exporter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding>
+            <marker date="1542824981969" expanded="true" signature="49:54" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
