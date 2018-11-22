@@ -4,7 +4,7 @@ import tempfile
 import ifcopenshell
 from ifc_model.data.template import template_data
 
-O = 0., 0., 0.
+ORIGIN = 0., 0., 0.
 X = 1., 0., 0.
 Y = 0., 1., 0.
 Z = 0., 0., 1.
@@ -21,7 +21,7 @@ def create_guid():
     return ifcopenshell.guid.compress(uuid.uuid1().hex)
 
 
-def create_ifc_axis2placement(ifcfile, point=O, dir1=Z, dir2=X):
+def create_ifc_axis2placement(ifcfile, point=ORIGIN, dir1=Z, dir2=X):
     """
     Creates an IfcAxis2Placement3D from Location, Axis and RefDirection
     specified as Python tuples
@@ -33,7 +33,7 @@ def create_ifc_axis2placement(ifcfile, point=O, dir1=Z, dir2=X):
     return ifcfile.createIfcAxis2Placement3D(point, dir1, dir2)
 
 
-def create_ifc_local_placement(ifc_file, point=O, dir1=Z, dir2=X,
+def create_ifc_local_placement(ifc_file, point=ORIGIN, dir1=Z, dir2=X,
                                relative_to=None):
     """
     Creates an IfcLocalPlacement from Location, Axis and RefDirection,
