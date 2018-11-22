@@ -1,5 +1,6 @@
 buildings/*.ifc
 out/*.json
+out/*.ifc
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

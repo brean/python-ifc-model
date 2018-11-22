@@ -1,3 +1,4 @@
+import os
 from ifc_model.model import *
 from ifc_model.ifcopenshell.exporter import export as ifcopenshell_export
 
@@ -5,7 +6,7 @@ from ifc_model.ifcopenshell.exporter import export as ifcopenshell_export
 def main():
     p = Project(
         name='Test Building',
-        filename='test.ifc')
+        filename=os.path.join('out', 'test.ifc'))
     address = Address(
         address_lines=['12 Somewhere Road'],
         town='Nowhere',
