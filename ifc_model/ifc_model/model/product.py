@@ -12,8 +12,11 @@ class Product(object):
 
 
 class Wall(Product):
-    def __init__(self, parent, name, global_id=None):
+    def __init__(self, parent, name, width, length, height, global_id=None):
         super().__init__(parent, name, global_id)
+        self.width = width
+        self.length = length
+        self.height = height
 
 
 class Door(Product):

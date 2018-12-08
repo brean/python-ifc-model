@@ -3,6 +3,7 @@ import time
 import tempfile
 import ifcopenshell
 from ifc_model.data.template import template_data
+from ifc_model.model.product import Wall
 
 ORIGIN = 0., 0., 0.
 X = 1., 0., 0.
@@ -117,12 +118,26 @@ def create_ifc_postal_address(
 
 
 def export_product(ifc_file, product, ifc_refs):
-    pass
+    if isinstance(product, Wall):
+        ifc_product = ifc_file.createIfcWall()
+    else:
+        ifc_product = ifc_file.createIfcProduct()
+    # print(dir(ifc_product))
 
 
 def export_space(ifc_file, space, ifc_refs):
-    ifc_file.createIfcSpace(
-
+    ifc_story = ifc_file.createIfcSpace(
+        OwnerHistory=ifc_refs['owner_history'],
+        Description=space.description,
+        Name=space.name,
+        LongName=space.long_name,
+        ObjectPlacement=None,
+        ObjectType=None,
+        # CompositionType=None,
+        Representation=None,
+        GlobalId=get_id(space),
+        # InteriorOrExteriorSpace=None,
+        # ElevationWithFlooring=None
     )
     for product in space.products:
         export_product(ifc_file, product, ifc_refs)

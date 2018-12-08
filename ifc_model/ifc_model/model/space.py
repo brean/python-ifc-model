@@ -7,6 +7,7 @@ class Space(object):
         self.global_id = global_id
         self.long_name = long_name
         self.description = description
+        self.products = []
 
     def to_dict(self):
         data = self.__dict__

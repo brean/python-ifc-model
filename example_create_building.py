@@ -27,6 +27,35 @@ def main():
         building,
         name='Ground Floor'
     )
+    living_room = Space(
+        ground_floor,
+        name='Living Room'
+    )
+    # inner size of the room in meter
+    height = 2.8
+    width = 4.0
+    length = 5.0
+    # 10 cm wall width for all 4 walls around the room
+    wall_width = 0.1
+    left = Wall(living_room,
+        name='left wall',
+        width=wall_width,
+        length=length,
+        height=height)
+    top = Wall(living_room,
+        name='top wall',
+        width=wall_width,
+        length=width,
+        height=height)
+
+    bath = Space(
+        ground_floor,
+        name='Bath'
+    )
+    floor = Space(
+        ground_floor,
+        name='Floor'
+    )
     ifcopenshell_export(p)
 
 
